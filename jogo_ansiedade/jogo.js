@@ -159,9 +159,11 @@ function cria_fogo(x){
                         //console.log('vc esta vivo !!!')
                     }else{
                         estado = 'morrendo'
-                        fogo.dano += 1
-                        if (fogo.dano == 15){
+                        fogo.dano ++
+                        if(fogo.dano == 1){
                             vida -= 1
+                        }
+                        if(fogo.dano == 30){
                             fogo.dano = 0
                         }
                         //console.log('vc morreu !!!')
@@ -215,10 +217,11 @@ function cria_cacador(x,limite){
                         //console.log('vc esta vivo !!!')
                     }else{
                         estado = 'morrendo'
-                        cacador.dano += 1
-                        if (cacador.dano == 15){
-                            console.log('oi')
+                        cacador.dano ++
+                        if(cacador.dano == 1){
                             vida -= 1
+                        }
+                        if(cacador.dano == 30){
                             cacador.dano = 0
                         }
                         //console.log('vc morreu !!!')
@@ -244,6 +247,12 @@ function cria_cacador(x,limite){
                 cacador.direcao = 0
             }
         },
+
+        restaurarx(){
+            cacador.x = 300
+            cacador.dano = 0
+        },
+
     }
     return cacador
 }
@@ -491,6 +500,7 @@ function cria_niveis() {
             nivel_1.fogo_2.x = nivel_1.fogo_2.restaurarx
             nivel_1.chao_1.x = nivel_1.chao_1.restaurarx
             nivel_1.chao_2.x = nivel_1.chao_2.restaurarx
+            //nivel_1.cacador_1 = nivel_1.cacador_1.restaurarx
         },
     }
 
@@ -548,11 +558,13 @@ function teclado_2(){
     }
 }
 
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+
 let nivel_atual = 1
 let fase = cria_niveis()
 let sementes = 0
 let estado = 'normal'
-let vida = 1
+let vida = 3
 let morte = false
 let fundo = cria_fundo()
 
