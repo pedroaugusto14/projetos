@@ -1,0 +1,99 @@
+@charset "ut-f8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#fantasma {
+    display: none;
+}
+
+html , body {
+    background-color: #dbdada;
+}
+
+header{
+    background-color: green;
+    width: 98vw;
+    height: 10vh;
+}
+
+#campo_logo {
+    display: inline-block;
+    height: 100%;
+}
+
+#campo_logo > img {
+    height: 100%;
+}
+
+#campo_busca {
+    display: inline-block;
+    background-color: rgb(218, 179, 179);
+    width: 200px;
+    margin: 0px 0px 50px 50px;
+}
+
+#lupa{
+    width: 20px;
+    height: 20px;
+}
+
+#campo_busca > input{
+    border: 0px solid white;
+}
+
+#campo_carrinho{
+    display: inline-block;
+}
+
+#carrinho {
+    width: 40px;
+    height: 40px;
+}
+
+.vitrine {
+    display: inline-block;
+    width: 25vw;
+    height: 50vh;
+    margin-bottom: 100PX;
+    margin-left: 50PX;
+    padding: 10px;
+    background-color: white;
+}
+
+.vitrine > a > img {
+    display: block;
+    width: 100%;
+    height: 60%;
+    margin-top: 10px;
+}
+
+.vitrine > h2{
+    font-size: 2em;
+}
+
+.vitrine > p {
+    margin-top: 10px;
+}
+
+.istilo_resumo {
+    width: 80%;
+    height: 45px;
+    overflow: hidden;
+    white-space: normal;
+    margin: auto;
+}
+
+.sifrao {
+    display: inline-block;
+    font-size: 1.3em;
+    margin-left: 30px;
+}
+
+.istilo_preco {
+    display: inline-block;
+    font-size: 2em;
+}
