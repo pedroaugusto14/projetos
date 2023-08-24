@@ -18,40 +18,58 @@ header{
     background-color: green;
     width: 98vw;
     height: 10vh;
+    margin-bottom: 50px;
 }
 
-#campo_logo {
-    display: inline-block;
-    height: 100%;
+#contem {
+    display: flex;
+    width: 100vw;
+    align-items: center;
 }
 
-#campo_logo > img {
-    height: 100%;
+#logo {
+    margin-right: 20px;
 }
 
-#campo_busca {
-    display: inline-block;
-    background-color: rgb(218, 179, 179);
-    width: 200px;
-    margin: 0px 0px 50px 50px;
+#img_logo {
+    display: block;
+    width: 180px;
+    height: 8vh;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    margin-left: 10px;
+    background-image: url("../midia/img/caixa.png");
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
-#lupa{
-    width: 20px;
-    height: 20px;
+#buscar {
+    display: flex;
+    background-color: white;
+    width: 50vw;
+    height: 40px;
+    margin-right: 40px;
+    border-radius: 25px;
 }
 
-#campo_busca > input{
-    border: 0px solid white;
-}
-
-#campo_carrinho{
-    display: inline-block;
+#capo_buca {
+    margin-left: 10px;
 }
 
 #carrinho {
-    width: 40px;
-    height: 40px;
+    display: flex;
+    height: 8vh;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#img_carrinho {
+    display: flex;
+    width: 100px;
+    height: 8vh;
+    background-image: url("../midia/img/carrinho.png");
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .vitrine {
