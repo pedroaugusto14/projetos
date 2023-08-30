@@ -20,15 +20,17 @@ function novo_produto (nome , img , quant , preco , link , desc , resumo){
 function criar_produto(){
     lista.map((val)=>{
         conteiner.innerHTML+= `
-        
-        <div class="vitrine">
-            <h2>`+val.nome+`</h2>
-            <a href="`+val.link+`"><img src="`+val.img+`" alt="dsgfsg"></a>
-            <p class="sifrao">R$</p>
-            <p class="istilo_preco">`+val.preco+`</p>
-            <p class="botao_compra">ver</p>
-            <p class="istilo_resumo"> dbf fabfva ibgias dubgas bgafbg mdf bjhmdfi hgdbdfb dbnjk bnda sfvbgf oyhdsb guj</p>
-        </div>
+
+        <a href="#">
+            <div class="vitrine">
+                <h2>`+val.nome+`</h2>
+                <img src="`+val.img+`" alt="dsgfsg">
+                <p class="sifrao">R$</p>
+                <p class="istilo_preco">`+val.preco+`</p>
+                <p class="botao_compra">ver</p>
+                <p class="istilo_resumo"> dbf fabfva ibgias dubgas bgafbg mdf bjhmdfi hgdbdfb dbnjk bnda sfvbgf oyhdsb guj</p>
+            </div>
+        </a>
 
         `;
     })
