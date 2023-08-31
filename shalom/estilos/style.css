@@ -15,7 +15,7 @@ html , body {
 }
 
 header{
-    background-color: green;
+    background-color: #d96522;
     width: 98vw;
     height: 10vh;
     margin-bottom: 50px;
@@ -35,9 +35,9 @@ header{
 }
 
 #img_logo {
-    width: 180px;
+    width: 8vw;
     height: 8vh;
-    background-image: url("../midia/img/caixa.png");
+    background-image: url("../midia/img/logo-XZkp9WyeX-transformed.png");
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -54,20 +54,30 @@ header{
     margin-top: 8px;
     margin-left: 20px;
     font-size: 1.2em;
+    cursor: pointer;
 }
+
+
 
 #carrinho {
-    height: 8vh;
-    margin-right: 30px;
+    display: inline;
+    height: 6vh;
+    width: 4vw;
     margin-left: 20vw;
+    cursor: pointer;
 }
 
-#img_carrinho {
-    width: 100px;
-    height: 8vh;
-    background-image: url("../midia/img/carrinho.png");
-    background-repeat: no-repeat;
-    background-size: contain;
+#configuracao {
+    display: inline;
+    height: 6vh;
+    width: 4vw;
+    margin-right: 40px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.material-icons {
+    font-size: 50px;
 }
 
 .vitrine {
@@ -124,7 +134,7 @@ header{
 }
 
 .botao_compra {
-    background-color: rgb(168, 230, 76);
+    background-color: #F2B90F;
     margin: auto;
     margin-top: 4vh;
     margin-bottom: 20px;
