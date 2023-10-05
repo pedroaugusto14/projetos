@@ -1,6 +1,6 @@
 console.log ('jogo do fleep bard')
 const sprites = new Image();
-sprites.src = './sprites.png';
+sprites.src = './sprites_passaro.png';
 
 let fremes = 0
 

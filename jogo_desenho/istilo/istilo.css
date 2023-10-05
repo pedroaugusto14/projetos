@@ -1,0 +1,18 @@
+@charset "ut-f8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#tela {
+    border: 5px solid black;
+    margin-top: 50px;
+    color: #1ec275;
+}
+
+.contem_centro{
+    display: flex;
+    justify-content: center;
+}

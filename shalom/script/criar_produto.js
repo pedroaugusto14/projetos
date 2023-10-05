@@ -81,7 +81,7 @@ function novo_autidor(nome, preco, desconto, img, link, net) {
     autidores.push(autidor)
 }
 
-function novo_produto (nome , img , quant , preco , link , desc , resumo){
+function novo_produto (nome , img , quant , preco , link , desc , resumo, vendas){
     const produto = {
         nome: nome ,
         img: img ,
@@ -90,6 +90,8 @@ function novo_produto (nome , img , quant , preco , link , desc , resumo){
         link: link ,
         desc: desc,
         resumo: resumo ,
+        vendas: vendas,
+        novidade: 'novidade',
     }
 
     produtos.push(produto)
@@ -125,47 +127,54 @@ function criar_produto(){
     })
 }
 
-novo_produto('pedro' , 'midia/img/produto_03.png' , 0 , 40.00 , '#' , 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' , 'fdvbpdfuvbapduvbgáuvgbafívubafvbgaifsdugaioyf')
-novo_produto('zezinho' , 'midia/img/produto_09.png' , 0 , 600.00 , '#' , 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,)
-novo_produto('pedrinho' , 'midia/img/produto_03.png' , 0 , 9.00 , '#', 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' , 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,)
-novo_produto('pedro' , 'midia/img/produto_08.png' , 0 , 40.00 , '#', 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' , 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,)
-novo_produto('pedro' , 'midia/img/produto_09.png' , 0 , 40.00 , '#', 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,)
-novo_produto('pedro' , 'midia/img/produto_03.png' , 0 , 40.00 , '#', 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,)
-novo_produto('blusa' , 'midia/img/produto_10.png' , 0 , 45 , '#' , 'dfhgpd fuighaíd uf   dpf fdhbdfahd dfga dfga' , 'difugvba dfhbap pydfbau hsdbpauyh ')
-novo_produto("pedra" , "midia/img/produto_08.png" , 0, 30.00, '#', 'dvhpsdiuvgp vue vgervpewc uerfvuew fveg', 'fhweifvgeiv vhyevush ceyhvcewu c cewfvoweycv')
-novo_produto('pedro' , 'midia/img/produto_03.png' , 0 , 40.00 , '#' , 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' , 'fdvbpdfuvbapduvbgáuvgbafívubafvbgaifsdugaioyf')
-novo_produto('zezinho' , 'midia/img/produto_09.png' , 0 , 600.00 , '#' , 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,)
-novo_produto('pedrinho' , 'midia/img/produto_03.png' , 0 , 9.00 , '#', 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' , 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,)
-novo_produto('pedro' , 'midia/img/produto_08.png' , 0 , 40.00 , '#', 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' , 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,)
-novo_produto('pedro' , 'midia/img/produto_09.png' , 0 , 40.00 , '#', 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,)
-novo_produto('pedro' , 'midia/img/produto_03.png' , 0 , 40.00 , '#', 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,)
-novo_produto('blusa' , 'midia/img/produto_10.png' , 0 , 45 , '#' , 'dfhgpd fuighaíd uf   dpf fdhbdfahd dfga dfga' , 'difugvba dfhbap pydfbau hsdbpauyh ')
-novo_produto("pedra" , "midia/img/produto_08.png" , 0, 30.00, '#', 'dvhpsdiuvgp vue vgervpewc uerfvuew fveg', 'fhweifvgeiv vhyevush ceyhvcewu c cewfvoweycv')
-novo_produto('pedro' , 'midia/img/produto_03.png' , 0 , 40.00 , '#' , 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' , 'fdvbpdfuvbapduvbgáuvgbafívubafvbgaifsdugaioyf')
-novo_produto('zezinho' , 'midia/img/produto_09.png' , 0 , 600.00 , '#' , 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,)
-novo_produto('pedrinho' , 'midia/img/produto_03.png' , 0 , 9.00 , '#', 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' , 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,)
-novo_produto('pedro' , 'midia/img/produto_08.png' , 0 , 40.00 , '#', 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' , 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,)
-novo_produto('pedro' , 'midia/img/produto_09.png' , 0 , 40.00 , '#', 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,)
-novo_produto('pedro' , 'midia/img/produto_03.png' , 0 , 40.00 , '#', 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,)
-novo_produto('blusa' , 'midia/img/produto_10.png' , 0 , 45 , '#' , 'dfhgpd fuighaíd uf   dpf fdhbdfahd dfga dfga' , 'difugvba dfhbap pydfbau hsdbpauyh ')
-novo_produto("pedra" , "midia/img/produto_08.png" , 0, 30.00, '#', 'dvhpsdiuvgp vue vgervpewc uerfvuew fveg', 'fhweifvgeiv vhyevush ceyhvcewu c cewfvoweycv')
-novo_produto('pedro' , 'midia/img/produto_03.png' , 0 , 40.00 , '#' , 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' , 'fdvbpdfuvbapduvbgáuvgbafívubafvbgaifsdugaioyf')
-novo_produto('zezinho' , 'midia/img/produto_09.png' , 0 , 600.00 , '#' , 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,)
-novo_produto('pedrinho' , 'midia/img/produto_03.png' , 0 , 9.00 , '#', 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' , 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,)
-novo_produto('pedro' , 'midia/img/produto_08.png' , 0 , 40.00 , '#', 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' , 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,)
-novo_produto('pedro' , 'midia/img/produto_09.png' , 0 , 40.00 , '#', 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,)
-novo_produto('pedro' , 'midia/img/produto_03.png' , 0 , 40.00 , '#', 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,)
-novo_produto('blusa' , 'midia/img/produto_10.png' , 0 , 45 , '#' , 'dfhgpd fuighaíd uf   dpf fdhbdfahd dfga dfga' , 'difugvba dfhbap pydfbau hsdbpauyh ')
-novo_produto("pedra" , "midia/img/produto_08.png" , 0, 30.00, '#', 'dvhpsdiuvgp vue vgervpewc uerfvuew fveg', 'fhweifvgeiv vhyevush ceyhvcewu c cewfvoweycv')
-novo_produto('pedro' , 'midia/img/produto_03.png' , 0 , 40.00 , '#' , 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' , 'fdvbpdfuvbapduvbgáuvgbafívubafvbgaifsdugaioyf')
-novo_produto('zezinho' , 'midia/img/produto_09.png' , 0 , 600.00 , '#' , 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,)
-novo_produto('pedrinho' , 'midia/img/produto_03.png' , 0 , 9.00 , '#', 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' , 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,)
-novo_produto('pedro' , 'midia/img/produto_08.png' , 0 , 40.00 , '#', 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' , 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,)
-novo_produto('pedro' , 'midia/img/produto_09.png' , 0 , 40.00 , '#', 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,)
-novo_produto('pedro' , 'midia/img/produto_03.png' , 0 , 40.00 , '#', 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,)
-novo_produto('blusa' , 'midia/img/produto_10.png' , 0 , 45 , '#' , 'dfhgpd fuighaíd uf   dpf fdhbdfahd dfga dfga' , 'difugvba dfhbap pydfbau hsdbpauyh ')
-novo_produto("pedra" , "midia/img/produto_08.png" , 0, 30.00, '#', 'dvhpsdiuvgp vue vgervpewc uerfvuew fveg', 'fhweifvgeiv vhyevush ceyhvcewu c cewfvoweycv')
-
+novo_produto('pedro' , 'midia/img/produto_03.png' , 0 , 40.00 , '#' , 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' , 'fdvbpdfuvbapduvbgáuvgbafívubafvbgaifsdugaioyf',6,)
+novo_produto('zezinho' , 'midia/img/produto_09.png' , 0 , 600.00 , '#' , 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,2,)
+novo_produto('pedrinho' , 'midia/img/produto_03.png' , 0 , 9.00 , '#', 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' , 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,14,)
+novo_produto('pedro' , 'midia/img/produto_08.png' , 0 , 40.00 , '#', 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' , 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,1,)
+novo_produto('pedro' , 'midia/img/produto_09.png' , 0 , 40.00 , '#', 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,0,)
+novo_produto('pedro' , 'midia/img/produto_03.png' , 0 , 40.00 , '#', 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,33,)
+novo_produto('pedro' , 'midia/img/produto_03.png' , 0 , 40.00 , '#' , 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' , 'fdvbpdfuvbapduvbgáuvgbafívubafvbgaifsdugaioyf',6,)
+novo_produto('zezinho' , 'midia/img/produto_09.png' , 0 , 600.00 , '#' , 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,2,)
+novo_produto('pedrinho' , 'midia/img/produto_03.png' , 0 , 9.00 , '#', 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' , 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,14,)
+novo_produto('pedro' , 'midia/img/produto_08.png' , 0 , 40.00 , '#', 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' , 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,1,)
+novo_produto('pedro' , 'midia/img/produto_09.png' , 0 , 40.00 , '#', 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,0,)
+novo_produto('pedro' , 'midia/img/produto_03.png' , 0 , 40.00 , '#', 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,33,)
+novo_produto('pedro' , 'midia/img/produto_03.png' , 0 , 40.00 , '#' , 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' , 'fdvbpdfuvbapduvbgáuvgbafívubafvbgaifsdugaioyf',6,)
+novo_produto('zezinho' , 'midia/img/produto_09.png' , 0 , 600.00 , '#' , 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,2,)
+novo_produto('pedrinho' , 'midia/img/produto_03.png' , 0 , 9.00 , '#', 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' , 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,14,)
+novo_produto('pedro' , 'midia/img/produto_08.png' , 0 , 40.00 , '#', 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' , 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,1,)
+novo_produto('pedro' , 'midia/img/produto_09.png' , 0 , 40.00 , '#', 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,0,)
+novo_produto('pedro' , 'midia/img/produto_03.png' , 0 , 40.00 , '#', 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,33,)
+novo_produto('pedro' , 'midia/img/produto_03.png' , 0 , 40.00 , '#' , 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' , 'fdvbpdfuvbapduvbgáuvgbafívubafvbgaifsdugaioyf',6,)
+novo_produto('zezinho' , 'midia/img/produto_09.png' , 0 , 600.00 , '#' , 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,2,)
+novo_produto('pedrinho' , 'midia/img/produto_03.png' , 0 , 9.00 , '#', 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' , 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,14,)
+novo_produto('pedro' , 'midia/img/produto_08.png' , 0 , 40.00 , '#', 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' , 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,1,)
+novo_produto('pedro' , 'midia/img/produto_09.png' , 0 , 40.00 , '#', 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,0,)
+novo_produto('pedro' , 'midia/img/produto_03.png' , 0 , 40.00 , '#', 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,33,)
+novo_produto('pedro' , 'midia/img/produto_03.png' , 0 , 40.00 , '#' , 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' , 'fdvbpdfuvbapduvbgáuvgbafívubafvbgaifsdugaioyf',6,)
+novo_produto('zezinho' , 'midia/img/produto_09.png' , 0 , 600.00 , '#' , 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,2,)
+novo_produto('pedrinho' , 'midia/img/produto_03.png' , 0 , 9.00 , '#', 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' , 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,14,)
+novo_produto('pedro' , 'midia/img/produto_08.png' , 0 , 40.00 , '#', 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' , 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,1,)
+novo_produto('pedro' , 'midia/img/produto_09.png' , 0 , 40.00 , '#', 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,0,)
+novo_produto('pedro' , 'midia/img/produto_03.png' , 0 , 40.00 , '#', 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,33,)
+novo_produto('pedro' , 'midia/img/produto_03.png' , 0 , 40.00 , '#' , 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' , 'fdvbpdfuvbapduvbgáuvgbafívubafvbgaifsdugaioyf',6,)
+novo_produto('zezinho' , 'midia/img/produto_09.png' , 0 , 600.00 , '#' , 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,2,)
+novo_produto('pedrinho' , 'midia/img/produto_03.png' , 0 , 9.00 , '#', 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' , 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,14,)
+novo_produto('pedro' , 'midia/img/produto_08.png' , 0 , 40.00 , '#', 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' , 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,1,)
+novo_produto('pedro' , 'midia/img/produto_09.png' , 0 , 40.00 , '#', 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,0,)
+novo_produto('pedro' , 'midia/img/produto_03.png' , 0 , 40.00 , '#', 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,33,)
+novo_produto('pedro' , 'midia/img/produto_03.png' , 0 , 40.00 , '#' , 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' , 'fdvbpdfuvbapduvbgáuvgbafívubafvbgaifsdugaioyf',6,)
+novo_produto('zezinho' , 'midia/img/produto_09.png' , 0 , 600.00 , '#' , 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,2,)
+novo_produto('pedrinho' , 'midia/img/produto_03.png' , 0 , 9.00 , '#', 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' , 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,14,)
+novo_produto('pedro' , 'midia/img/produto_08.png' , 0 , 40.00 , '#', 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' , 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,1,)
+novo_produto('pedro' , 'midia/img/produto_09.png' , 0 , 40.00 , '#', 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,0,)
+novo_produto('pedro' , 'midia/img/produto_03.png' , 0 , 40.00 , '#', 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,33,)
+novo_produto('pedro' , 'midia/img/produto_03.png' , 0 , 40.00 , '#' , 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' , 'fdvbpdfuvbapduvbgáuvgbafívubafvbgaifsdugaioyf',6,)
+novo_produto('zezinho' , 'midia/img/produto_09.png' , 0 , 600.00 , '#' , 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,2,)
+novo_produto('pedrinho' , 'midia/img/produto_03.png' , 0 , 9.00 , '#', 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' , 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,14,)
+novo_produto('pedro' , 'midia/img/produto_08.png' , 0 , 40.00 , '#', 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' , 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,1,)
+novo_produto('pedro' , 'midia/img/produto_09.png' , 0 , 40.00 , '#', 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,0,)
+novo_produto('pedro' , 'midia/img/produto_03.png' , 0 , 40.00 , '#', 'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,'fgbvfibvdivfuvfubvgfvbubdebnfubvujiauvadpsdbv' ,33,)
 
 autidores.map((val) => {
     prop ++
